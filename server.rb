@@ -1,5 +1,10 @@
+require 'json'
 require 'sinatra'
 
+before do
+  content_type :json
+end
+
 get '/' do
-  'Hello World!'
+  { message: 'Hello World!' }.to_json
 end
