@@ -4,4 +4,6 @@ gem 'json'
 gem 'puma'
 gem 'rack-test'
 gem 'rspec', '~> 3.0'
+gem 'simplecov', require: false, group: :test
+gem 'simplecov-lcov'
 gem 'sinatra'
