@@ -1,11 +1,7 @@
 require 'simplecov'
-require 'coveralls'
-
-Coveralls.wear!
 
 SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::HTMLFormatter,
-  Coveralls::SimpleCov::Formatter
 ])
 SimpleCov.minimum_coverage 100
 SimpleCov.start

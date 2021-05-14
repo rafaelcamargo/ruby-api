@@ -12,6 +12,3 @@ jobs:
       - run:
           name: Test
           command: bundle exec rspec spec
-      - run:
-          name: Upload Test Coverage
-          command: COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN  bundle exec coveralls push
